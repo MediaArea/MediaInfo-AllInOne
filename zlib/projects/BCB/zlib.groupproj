@@ -1,0 +1,36 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{DCDF0EB4-DFDF-4F62-942F-8A569246BFAE}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="zlib.cbproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="zlib">
+			<MSBuild Projects="zlib.cbproj"/>
+		</Target>
+		<Target Name="zlib:Clean">
+			<MSBuild Targets="Clean" Projects="zlib.cbproj"/>
+		</Target>
+		<Target Name="zlib:Make">
+			<MSBuild Targets="Make" Projects="zlib.cbproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="zlib"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="zlib:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="zlib:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>
