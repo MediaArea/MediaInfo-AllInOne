@@ -1,1 +1,1 @@
-This is a SVN directory in order to have all dependancies together
+This is an SVN directory in order to have all dependencies together.
