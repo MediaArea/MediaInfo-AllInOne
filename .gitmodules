@@ -1,0 +1,12 @@
+[submodule "ZenLib"]
+	path = ZenLib
+	url = https://github.com/MediaArea/ZenLib.git
+	branch = master
+[submodule "MediaInfoLib"]
+	path = MediaInfoLib
+	url = https://github.com/MediaArea/MediaInfoLib.git
+	branch = master
+[submodule "MediaInfo"]
+	path = MediaInfo
+	url = https://github.com/MediaArea/MediaInfo.git
+	branch = master
