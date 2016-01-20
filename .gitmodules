@@ -10,3 +10,6 @@
 	path = MediaInfo
 	url = https://github.com/MediaArea/MediaInfo.git
 	branch = master
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/MediaArea/zlib.git
